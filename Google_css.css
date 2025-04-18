@@ -1,0 +1,91 @@
+.my_class {
+    background-color: #ffffff;
+}
+.my_class:hover {
+    background-color: #dddddd;
+}
+
+.input-type {
+    min-width: 584px;
+    height: 44px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16);
+    padding: 0 16px;
+    font-size: 16px;
+}
+
+.input-type:focus {
+    outline: none;
+    border-color: #1a73e8;
+    box-shadow: 0px 0px 0px 1px #1a73e8;
+}
+
+.input-type::placeholder {
+    color: #80868b;
+    font-size: 16px;
+}
+
+.navbar {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-nav .nav-link {
+    color: #212121;
+    font-size: 17px;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+}
+
+.navbar-nav .nav-link i.bi {
+    font-size: 20px;
+}
+
+.navbar-nav .nav-link img.rounded-circle {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+}
+
+button.btn-light {
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    font-size: 14px;
+    color: #3c4043;
+    padding: 10px 24px;
+    margin: 4px;
+    min-width: 36px;
+    text-align: center;
+    cursor: pointer;
+}
+
+button.btn-light:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: #f1f2f3;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+button.btn-light:focus {
+    border: 1px solid #4285f4;
+    outline: none;
+}
+
+button.btn-light:active {
+    background-color: #e8eaed;
+    box-shadow: none;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
