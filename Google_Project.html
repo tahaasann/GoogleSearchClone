@@ -70,7 +70,7 @@
         <div
             class="d-flex flex-column align-items-center justify-content-center"
         >
-            <form action="https://google.com/search" method="get">
+            <form action="https://www.google.com/search" method="get">
                 <div class="row mx-auto mb-3">
                     <div class="col d-flex flex-column">
                         <input
@@ -88,7 +88,11 @@
                         </button>
                     </div>
                     <div class="col-auto d-flex justify-content-center">
-                        <button class="btn btn-light" onclick="submitLucky()">
+                        <button
+                            class="btn btn-light"
+                            type="button"
+                            onclick="submitLucky()"
+                        >
                             I'm Feeling Lucky
                         </button>
                     </div>
@@ -99,10 +103,12 @@
             function submitLucky() {
                 var query = document.querySelector('input[name="q"]').value;
                 if (query) {
-                    window.location.href =
+                    var luckyUrl =
                         "https://www.google.com/search?q=" +
                         encodeURIComponent(query) +
-                        "&btnI=I%27m+Feeling+Lucky";
+                        "&btnI=lucky"; // btnI değerini değiştirdik
+                    console.log("Lucky URL: ", luckyUrl);
+                    window.location.href = luckyUrl;
                 }
             }
         </script>
